@@ -1,0 +1,604 @@
+/* Підключення шрифтів, які використовувалися в макеті */
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@600;700&family=Source+Sans+3:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.promo-container {
+    width: 440px;
+    margin: 0 auto; /* Центрування блоку */
+    background-color: #ffffff;
+    font-family: 'Source Sans 3', sans-serif;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /* Додано легку рамку, щоб блок візуально виділявся на білому фоні сторінки (за потреби можна видалити) */
+    border: 1px solid #f0f0f0; 
+}
+
+.promo-title {
+    color: #DD2217;
+    font-family: 'Onest', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 25px 0 5px 0;
+}
+
+.promo-subtitle {
+    color: rgba(0, 0, 0, 0.60);
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 15px 0;
+}
+
+.promo-body {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 15px;
+    /* Від'ємний відступ, щоб з'єднати картинку дівчини впритул до чорного підвалу */
+    margin-bottom: -5px; 
+}
+
+.promo-image {
+    width: 175px;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: flex-end;
+}
+
+.promo-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.promo-content {
+    padding-left: 15px;
+    left: -5%;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+.promo-alert {
+    color: #DD2217;
+    font-family: 'Onest', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.promo-desc {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    max-width: 200px;
+    margin: 5px 0 0 0;
+}
+
+.promo-desc strong {
+    font-weight: 700;
+}
+
+.promo-stars {
+    position: absolute;
+    right: -20px;
+    top: 80%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: auto;
+}
+
+.promo-footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 12px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 3; /* Щоб чорний блок був поверх нижньої частини картинки, якщо вона вилазить */
+}
+
+.promo-footer img {
+    width: 16px;
+    height: 16px;
+}
+
+
+
+.routines-container {
+    width: 386px;
+    margin: 30px auto 300px auto; /* Центрування по горизонталі */
+    font-family: 'Source Sans 3', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Кнопка */
+.btn-unlock {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 100px;
+    padding: 14px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    transition: opacity 0.2s ease;
+}
+
+.btn-unlock:hover {
+    opacity: 0.9;
+}
+
+.icon-fire {
+    width: 20px;
+    height: auto;
+}
+
+/* Контейнер для карток */
+.cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+}
+
+/* Спільні стилі для карток */
+.routine-card {
+    border-radius: 24px;
+    padding: 14px 16px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    box-sizing: border-box;
+}
+
+/* Картка Ранок */
+.morning-card {
+    background-image: url('../images/img1.webp');
+    color: #000000;
+}
+
+/* Картка Вечір */
+.evening-card {
+    background-image: url('../images/img5.webp');
+    color: #ffffff;
+}
+
+/* Заголовок карток */
+.card-header {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.card-title-wrap {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.card-title {
+    font-family: 'Onest', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.card-subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.evening-card .card-subtitle {
+    text-shadow: 0px 4px 11px rgba(0, 0, 0, 0.46);
+}
+
+.icon-sun {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-moon {
+    width: 18px;
+    height: auto;
+}
+
+/* Тіло карток */
+.card-body {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.routine-thumb {
+    width: 175px;
+    height: auto;
+    border-radius: 12px;
+    border: 2px solid #ffffff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Легка тінь для глибини */
+    object-fit: cover;
+}
+
+/* Списки з галочками */
+.routine-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.routine-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.evening-card .routine-features li {
+    text-shadow: 0px 4px 11px rgba(0, 0, 0, 0.46);
+}
+
+.icon-check {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-top: -1px;
+}
+
+.sticky-footer {
+    width: 428px;
+    box-sizing: border-box;
+    padding: 32px 24px 28px 24px;
+    background: #ffffff;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    box-shadow: 0px -4px 30px rgba(0, 0, 0, 0.1); /* Тінь всього блоку */
+    
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+    /* Фіксація і анімація */
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 150%);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+}
+
+.sticky-footer.active {
+    transform: translate(-50%, 0);
+}
+
+.timer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4px;
+}
+
+.timer-label {
+    color: #000000;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.timer-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.timer-box {
+    background: #ffffff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08); /* Індивідуальна тінь плашки як на скріні */
+    border-radius: 14px;
+    padding: 12px 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 28px;
+}
+
+.timer-val {
+    font-family: 'Outfit', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+
+.val-hours {
+    color: #000000;
+}
+
+.val-minutes,
+.val-seconds {
+    color: #DD2217;
+}
+
+.timer-colon {
+    color: rgba(0, 0, 0, 0.15);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0 2px;
+    margin-top: -2px;
+}
+
+.btn-unlock-footer {
+    width: 100%;
+    background: #000000;
+    border-radius: 100px;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    box-sizing: border-box;
+    transition: opacity 0.2s ease;
+}
+
+.btn-unlock-footer:hover {
+    opacity: 0.85;
+}
+
+.btn-icon {
+    width: 20px;
+    height: auto;
+}
+
+.support-link {
+    text-align: center;
+    color: #000000;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+}
+
+@media (max-width: 430px) {
+    .promo-container {
+        width: 100vw; /* Замість 102.325vw (440px), щоб не було горизонтального скролу */
+        border: 0.232vw solid #f0f0f0;
+    }
+
+    .promo-title {
+        font-size: 4.651vw;
+        margin: 5.813vw 0 1.162vw 0;
+    }
+
+    .promo-subtitle {
+        font-size: 3.72vw;
+        margin: 0 0 3.488vw 0;
+    }
+
+    .promo-body {
+        padding-left: 3.488vw;
+        margin-bottom: -1.162vw;
+    }
+
+    .promo-image {
+        width: 40.697vw;
+    }
+
+    .promo-content {
+        padding-left: 3.488vw;
+        margin-bottom: 4.651vw;
+    }
+
+    .promo-alert {
+        font-size: 9.302vw;
+    }
+
+    .promo-desc {
+        font-size: 3.72vw;
+        max-width: 45.86vw;
+        margin: 1.162vw 0 0 0;
+    }
+
+    .promo-stars {
+        right: -4.65vw;
+        width: 5.813vw;
+    }
+
+    .promo-footer {
+        padding: 2.79vw 2.325vw;
+        gap: 1.86vw;
+        font-size: 3.255vw;
+    }
+
+    .promo-footer img {
+        width: 3.72vw;
+        height: 3.72vw;
+    }
+
+    .routines-container {
+        width: 89.767vw;
+        margin: 6.976vw auto 69.767vw auto;
+    }
+
+    .btn-unlock {
+        border-radius: 23.255vw;
+        padding: 3.255vw 5.581vw;
+        gap: 1.86vw;
+        font-size: 4.651vw;
+        margin-bottom: 5.581vw;
+    }
+
+    .icon-fire {
+        width: 4.651vw;
+    }
+
+    .cards-wrapper {
+        gap: 3.255vw;
+    }
+
+    .routine-card {
+        border-radius: 5.581vw;
+        padding: 3.255vw 3.72vw;
+        gap: 3.255vw;
+    }
+
+    .card-header {
+        gap: 0.93vw;
+    }
+
+    .card-title-wrap {
+        gap: 1.395vw;
+    }
+
+    .card-title {
+        font-size: 5.581vw;
+    }
+
+    .card-subtitle {
+        font-size: 3.72vw;
+    }
+
+    .evening-card .card-subtitle {
+        text-shadow: 0vw 0.93vw 2.558vw rgba(0, 0, 0, 0.46);
+    }
+
+    .icon-sun {
+        width: 5.581vw;
+        height: 5.581vw;
+    }
+
+    .icon-moon {
+        width: 4.186vw;
+    }
+
+    .card-body {
+        gap: 3.255vw;
+    }
+
+    .routine-thumb {
+        width: 40.697vw;
+        border-radius: 2.79vw;
+        border: 0.465vw solid #ffffff;
+        box-shadow: 0vw 2.325vw 4.651vw rgba(0, 0, 0, 0.15);
+    }
+
+    .routine-features {
+        gap: 2.325vw;
+    }
+
+    .routine-features li {
+        gap: 1.395vw;
+        font-size: 3.255vw;
+    }
+
+    .evening-card .routine-features li {
+        text-shadow: 0vw 0.93vw 2.558vw rgba(0, 0, 0, 0.46);
+    }
+
+    .icon-check {
+        width: 4.651vw;
+        height: 4.651vw;
+        margin-top: -0.232vw;
+    }
+
+    .sticky-footer {
+        width: 99.534vw;
+        padding: 7.441vw 5.581vw 6.511vw 5.581vw;
+        border-top-left-radius: 7.441vw;
+        border-top-right-radius: 7.441vw;
+        box-shadow: 0vw -0.93vw 6.976vw rgba(0, 0, 0, 0.1);
+    }
+
+    .timer-row {
+        padding: 0 0.93vw;
+    }
+
+    .timer-label {
+        font-size: 4.186vw;
+        letter-spacing: 0.116vw;
+    }
+
+    .timer-group {
+        gap: 1.395vw;
+    }
+
+    .timer-box {
+        box-shadow: 0vw 0.93vw 3.488vw rgba(0, 0, 0, 0.08);
+        border-radius: 3.255vw;
+        padding: 2.79vw 3.255vw;
+        min-width: 6.511vw;
+    }
+
+    .timer-val {
+        font-size: 5.116vw;
+        letter-spacing: 0.232vw;
+    }
+
+    .timer-colon {
+        font-size: 4.651vw;
+        margin: 0 0.465vw;
+        margin-top: -0.465vw;
+    }
+
+    .btn-unlock-footer {
+        border-radius: 23.255vw;
+        padding: 3.72vw 5.581vw;
+        gap: 2.325vw;
+        font-size: 4.651vw;
+    }
+
+    .btn-icon {
+        width: 4.651vw;
+    }
+
+    .support-link {
+        font-size: 3.488vw;
+        letter-spacing: 0.232vw;
+    }
+}
